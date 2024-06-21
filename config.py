@@ -5,20 +5,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "22672907")  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "0ff15ae2153bd8e03b48cb293010bc6a") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7012772836:AAFBwKBA5S3s7ZmLTmWlMdf_U1NgC85z_vk") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', '-1002056115205') # ⚠️ Required
+    API_ID    = os.environ.get("API_ID", "21740783")  # ⚠️ Required
+    API_HASH  = os.environ.get("API_HASH", "a5dc7fec8302615f5b441ec5e238cd46") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', '-1002005436412') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
     # database config
-    DB_URL  = os.environ.get("DB_URL", "mongodb+srv://rani828719:sVyRWZOrUzIWNfHp@cluster0.zodktob.mongodb.net/?retryWrites=true&w=majority")  # ⚠️ Required
-    DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBot") 
+    DB_URL  = os.environ.get("DB_URL", "mongodb+srv://Speedwolf1:speedwolf24689@cluster0.rgfywsf.mongodb.net/")  # ⚠️ Required
+    DB_NAME  = os.environ.get("DB_NAME","Speedwolf1") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "6287591671")) # ⚠️ Required
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002022119783')) # ⚠️ Required
+    ADMIN = int(os.environ.get("ADMIN", "6299192020")) # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002141223756')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/15e82d7e665eccc8bd9c5.jpg")
 
