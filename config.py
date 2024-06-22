@@ -8,7 +8,7 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "21740783")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "a5dc7fec8302615f5b441ec5e238cd46") # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', '0') # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', '-1002247360053') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
@@ -18,7 +18,7 @@ class Config(object):
 
     # Other Configs 
     ADMIN = int(os.environ.get("ADMIN", "6299192020")) # ⚠️ Required
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002247360053')) # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002149238052')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/15e82d7e665eccc8bd9c5.jpg")
 
